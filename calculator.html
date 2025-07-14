@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <h2 id="heading">calculator</h2>
+    <div id="main">
+        <input type="text" id="input1" readonly>  
+        <div class="button-container">
+            <button class="button"
+            onclick="currValue =''
+            document.querySelector('#input1').value = currValue;"
+            >c</button>
+            <button class="button"  onclick=" currValue = currValue + '1';
+             document.querySelector('#input1').value = currValue;">1</button>
+            <button class="button"
+             onclick=" currValue = currValue + '2';
+             document.querySelector('#input1').value = currValue;"
+            >2</button>
+            <button class="button"
+             onclick=" currValue = currValue + '+';
+             document.querySelector('#input1').value = currValue;"
+            >+</button>
+            <button class="button"
+             onclick=" currValue = currValue + '3';
+             document.querySelector('#input1').value = currValue;"
+            >3</button>
+            <button class="button"
+             onclick=" currValue = currValue + '4';
+             document.querySelector('#input1').value = currValue;"
+            >4</button>
+            <button class="button"
+             onclick=" currValue = currValue + '-';
+             document.querySelector('#input1').value = currValue;"
+            >-</button>
+            <button class="button"
+             onclick=" currValue = currValue + '5';
+             document.querySelector('#input1').value = currValue;"
+            >5</button>
+            <button class="button"
+             onclick=" currValue = currValue + '6';
+             document.querySelector('#input1').value = currValue;"
+            >6</button>
+            <button class="button"
+             onclick=" currValue = currValue + '*';
+             document.querySelector('#input1').value = currValue;"
+            >*</button>
+            <button class="button"
+             onclick=" currValue = currValue + '7';
+             document.querySelector('#input1').value = currValue;"
+            >7</button>
+            <button class="button"
+             onclick=" currValue = currValue + '8';
+             document.querySelector('#input1').value = currValue;"
+            >8</button>
+            <button class="button"
+             onclick=" currValue = currValue + '/';
+             document.querySelector('#input1').value = currValue;"
+            >/</button>
+            <button class="button"
+             onclick=" currValue = eval(currValue);
+             document.querySelector('#input1').value = currValue;"
+            >=</button>
+            <button class="button"
+             onclick=" currValue = currValue + '9';
+             document.querySelector('#input1').value = currValue;"
+            >9</button>
+            <button class="button"
+             onclick=" currValue = currValue + '0';
+             document.querySelector('#input1').value = currValue;"
+            >0</button>
+            <button class="button"
+             onclick=" currValue = currValue + '.';
+             document.querySelector('#input1').value = currValue;"
+            >.</button>
+        </div>               
+    </div>
+
+    <script>
+
+         let currValue = '';
+        document.querySelector('#input1').value = currValue;
+       
+    </script>
+    
+</body>
+</html>
